@@ -1,0 +1,8 @@
+2024-12-20 16:45:15,602 - DEBUG - Using proactor: IocpProactor
+2024-12-20 16:45:15,605 - ERROR - Exception occurred: Unexpected error: list index out of range
+2024-12-20 16:45:15,606 - ERROR - Traceback: 
+Traceback (most recent call last):
+  File "c:\Users\HP\Downloads\Hap\Hap\Message_handler\image_handling.py", line 16, in handle_image_streaming
+    image_data_base64 = msg_obj['data'].split(',')[1]
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range

@@ -1,0 +1,503 @@
+import asyncio
+import base64
+import io
+import json
+import re
+import socket
+import uuid
+from concurrent.futures import ThreadPoolExecutor
+
+import cv2
+import easyocr
+import numpy as np
+import websockets
+from PIL import Image
+from easyocr import easyocr
+from fuzzywuzzy import process
+from matplotlib.colors import CSS4_COLORS, to_rgb
+from paddleocr import PaddleOCR
+from sklearn.cluster import KMeans
+from ultralytics import YOLOv10
+
+
+class MessageHandler:
+    def __init__(self, websocket):
+        self.websocket = websocket
+        self.current_question = None
+        self.image_ready = asyncio.Event()
+        self.executor = ThreadPoolExecutor()  # Executor for running blocking tasks
+        self.image_np = None
+        self.image_path = None
+        self.ocr = PaddleOCR(use_gpu=False)  # Initialize OCR instance once
+
+    async def handle_message(self, message):
+        print("Received message")
+        try:
+            msg_obj = json.loads(message)
+            if "id" in msg_obj and "channel" in msg_obj:
+                channel = msg_obj["channel"]
+                await self.route_message(channel, msg_obj)
+            else:
+                print("Invalid message format.")
+        except json.JSONDecodeError as e:
+            print(f"Error decoding JSON: {e}")
+
+    async def route_message(self, channel, msg_obj):
+        if channel == "Heartbeat":
+            await self.handle_heartbeat(msg_obj)
+        elif channel == "Question":
+            asyncio.create_task(self.handle_question(msg_obj))]
+        elif channel == "ImageStreaming":
+            await self.handle_image_streaming(msg_obj)
+        elif channel == "Result":
+            await self.handle_result(msg_obj)
+        else:
+            print(f"Unknown channel: {channel}")
+
+    async def handle_heartbeat(self, msg_obj):
+        await self.send_message_to_unity("Heartbeat", "Ping")
+
+    async def handle_question(self, msg_obj):
+        print(f"Processing Question message {msg_obj}")
+        self.current_question = json.loads(msg_obj["data"])
+        self.image_ready.clear()
+
+        # OCR
+        if self.current_question["fieldName"] == "SKU":  # TYPE OF MILK
+            while True:
+                try:
+                    # Wait for the next image to be ready
+                    await asyncio.wait_for(self.image_ready.wait(), timeout=30.0)
+                    self.image_ready.clear()  # Reset the event for the next image
+
+                    print("Question Image ready, processing...")
+                    result = await asyncio.to_thread(self.process_sku)
+
+                    if result:  # If a valid result is detected, break the loop
+                        print(f"Color detected: {result}")
+                        for option in self.current_question["fieldValue"]:
+                            if option["optionValue"] == result:
+                                option["isActive"] = True
+                                break
+                        await self.send_message_to_unity("Result", self.current_question)
+                        break
+
+                except asyncio.TimeoutError:
+                    print("Timed out waiting for the image.")
+                    return
+
+        # OCR
+        if self.current_question["fieldName"] == "TYPE OF MILK":  # TYPE OF MILK
+            while True:
+                try:
+                    # Wait for the next image to be ready
+                    await asyncio.wait_for(self.image_ready.wait(), timeout=30.0)
+                    self.image_ready.clear()  # Reset the event for the next image
+
+                    print("Question Image ready, processing...")
+                    result = await asyncio.to_thread(self.process_typeofmilk)
+
+                    if result:  # If a valid result is detected, break the loop
+                        print(f"Color detected: {result}")
+                        for option in self.current_question["fieldValue"]:
+                            if option["optionValue"] == result:
+                                option["isActive"] = True
+                                break
+                        await self.send_message_to_unity("Result", self.current_question)
+                        break
+
+                except asyncio.TimeoutError:
+                    print("Timed out waiting for the image.")
+                    return
+
+        # OCR
+        if self.current_question["fieldName"] == "VEHICLE NUMBER":
+            while True:
+                try:
+                    await asyncio.wait_for(self.image_ready.wait(), timeout=30.0)
+                    self.image_ready.clear()
+                    print("Question Image ready, processing vehicle number...")
+                    result = await self.process_vehicle_number()
+                    print(f"Vehicle detected: {result}")
+
+                    if result:
+                        print(f"Vehicle detected: {result}")
+                        self.current_question["fieldValue"] = result
+                        await self.send_message_to_unity("Result", self.current_question)
+                        break
+
+                except asyncio.TimeoutError:
+                    print("Timed out waiting for the image.")
+                    return
+
+        # Annotation Method
+        if self.current_question["fieldName"] == "Batch Code":
+            print(f"Current Question: {self.current_question}")
+            while True:
+                try:
+                    await asyncio.wait_for(self.image_ready.wait(), timeout=30.0)
+                    self.image_ready.clear()
+                    print("Question Image ready, processing batch code...")
+                    result = await self.process_batch_code()
+                    print(f"Batch code detected: {result}")
+
+                    if result:
+                        print(f"Batch code detected: {result}")
+                        self.current_question["fieldValue"] = result
+                        await self.send_message_to_unity("Result", self.current_question)
+                        break
+                except asyncio.TimeoutError:
+                    print("Timed out waiting for the image.")
+            return None
+        # Sign Language
+        if self.current_question["fieldName"] == "TYPE OF LEAK":
+            return None
+
+    async def handle_result(self, msg_obj):
+        print("Processing Result message")
+
+    async def handle_image_streaming(self, msg_obj):
+        print("Processing Image Streaming message")
+        try:
+            image_data_base64 = msg_obj['data']
+
+            if ',' in image_data_base64:
+                image_data_base64 = image_data_base64.split(',')[1]
+
+            image_data_base64 = self.ensure_base64_padding(image_data_base64)
+            image_data_bytes = base64.b64decode(image_data_base64)
+            image_buffer = io.BytesIO(image_data_bytes)
+            image = Image.open(image_buffer)
+
+            if image.mode != 'RGB':
+                image = image.convert('RGB')
+
+            self.image_np = np.array(image)
+
+            image.save('output_image.jpg', 'JPEG', quality=100)
+            print("Image saved")
+            self.image_path = "output_image.jpg"
+            self.image_ready.set()
+
+        except Exception as e:
+            print(f"Failed to process image streaming message: {e}")
+            self.image_ready.set()
+
+    async def process_type_of_milk_threaded(self):
+        loop = asyncio.get_running_loop()
+        await loop.run_in_executor(self.executor, self.process_type_of_milk)
+
+    def process_type_of_milk(self):
+        def closest_color(requested_color):
+            min_colors = {
+                sum((int(255 * c) - rc) ** 2 for c, rc in zip(to_rgb(hex_val), requested_color)): name
+                for name, hex_val in CSS4_COLORS.items()
+            }
+            return min_colors[min(min_colors.keys())]
+
+        # Process the provided NumPy array instead of reading from a file
+        print("Processing the streamed image...")
+        if not hasattr(self, 'image_np') or self.image_np is None:
+            print("No valid image data available.")
+            return None
+
+        # Load and process the image
+        # image_path = r"hap\output_image.jpg"
+        # image = cv2.imread(image_path)
+        # image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+        image_resized = cv2.resize(self.image_np, (200, 200), interpolation=cv2.INTER_AREA)
+        pixels = image_resized.reshape(-1, 3)
+
+        k = 10  # Number of clusters
+        kmeans = KMeans(n_clusters=k, random_state=42)
+        kmeans.fit(pixels)
+
+        dominant_colors = kmeans.cluster_centers_.astype(int)
+        labels, counts = np.unique(kmeans.labels_, return_counts=True)
+        proportions = counts / counts.sum()
+
+        sorted_indices = np.argsort(proportions)[::-1][:2]
+
+        top_two_colors = dominant_colors[sorted_indices]
+        top_two_color_names = [closest_color(color) for color in top_two_colors]
+
+        color_mapping = {
+            'orange': "FCM",
+            'darkorange': "FCM",
+            'orangered': "FCM",
+            'green': "SM",
+            'darkgreen': "SM",
+            'limegreen': "SM",
+            'blue': "TM",
+            'deepskyblue': "TM",
+            "steelblue": "TM",
+            'lightblue': "TM",
+            'lightgreen': "CM",
+            'palegreen': "CM"
+        }
+
+        print("\nTop Two Dominant Colors:")
+        for color, name in zip(top_two_colors, top_two_color_names):
+            if name == 'white':
+                continue
+            matched_name = next((key for key in color_mapping if key == name), None)
+            if matched_name:
+                print(f"{name}: {color_mapping[matched_name]}")
+                return color_mapping[matched_name]  # Return the detected color type
+
+        return None  # Return None if no valid color is detected
+
+    def process_sku(self):
+        print("Processing SKU message")
+        if not hasattr(self, 'image_np') or self.image_np is None:
+            print("No valid image data available.")
+            return None
+
+        print("Processing Image for ml recognition... ")
+        image = self.image_np
+        print("Image ")
+        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        print("Gray Image")
+        blurred_image = cv2.GaussianBlur(gray_image, (5, 5), 0)
+        print("Blurred Image")
+        binarized_image = cv2.adaptiveThreshold(blurred_image, 255,
+                                                cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                                cv2.THRESH_BINARY_INV, 11, 2)
+        print("Binarized Image")
+        reader = easyocr.Reader(['en'])
+        print("Reading image...")
+        results = reader.readtext(binarized_image)
+        print("Results")
+
+        print("Packets " + 'ml')
+
+        extracted_lines = []
+
+        for (bbox, text, confidence) in results:
+            print(f"Confidence -- {text}: {confidence}")
+            extracted_lines.append(text.strip())
+
+        packets = {
+            "500": ['500ml', '500'],
+            "750": ['750ml', '750'],
+            "1000": ['1L', '1', '1 L'],
+            "2000": ['2L', '2', '2 L'],
+        }
+
+        print(f"Packets - {extracted_lines}")
+
+        for line in extracted_lines:
+            for packet_type, variations in packets.items():
+                print(f" Packet Type -- {packet_type} -- {variations}")
+                best_match, match_score = process.extractOne(line, variations)
+                if match_score > 80:
+                    return packet_type
+
+        return None
+
+    def process_typeofmilk(self):
+        print("Processing Type of Milk message")
+        if not hasattr(self, 'image_np') or self.image_np is None:
+            print("No valid image data available.")
+            return None
+
+        print("Processing Image for ml recognition... ")
+        image = self.image_np
+        print("Image ")
+        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        print("Gray Image")
+        blurred_image = cv2.GaussianBlur(gray_image, (5, 5), 0)
+        print("Blurred Image")
+        binarized_image = cv2.adaptiveThreshold(blurred_image, 255,
+                                                cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                                cv2.THRESH_BINARY_INV, 11, 2)
+        print("Binarized Image")
+        reader = easyocr.Reader(['en'])
+        print("Reading image...")
+        results = reader.readtext(binarized_image)
+        print("Results")
+
+        print("Packets" + 'ml')
+
+        extracted_lines = []
+
+        for (bbox, text, confidence) in results:
+            print(f"Confidence -- {text}: {confidence}")
+            extracted_lines.append(text.strip())
+
+        # Define milk types with variations
+        milks = {
+            "SM": ["STANDARDIZED", "STANDARDIZED MILK"],
+            "FCM": ["FULL CREAM MILK", "FULL", "CREAM", "CREAM MILK"],
+            "TM": ["TONED", "TONED MILK"],
+            "CM": ["COW MILK", "COW"],
+        }
+
+        for line in extracted_lines:
+            for milk_type, variations in milks.items():
+                print(f"Type Of Milk -- {milk_type} -- {variations}")
+                best_match, match_score = process.extractOne(line, variations)
+                if match_score > 80:
+                    return milk_type
+
+        return None
+
+    async def process_batch_code(self):
+        print("Processing Batch Code message")
+        if not hasattr(self, 'image_np') or self.image_np is None:
+            print("No valid image data available.")
+            return None
+
+        print("Processing Image for ml recognition... ")
+        image = self.image_np
+        print("Image ")
+        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        print("Gray Image")
+        blurred_image = cv2.GaussianBlur(gray_image, (5, 5), 0)
+        print("Blurred Image")
+        binarized_image = cv2.adaptiveThreshold(blurred_image, 255,
+                                                cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                                cv2.THRESH_BINARY_INV, 11, 2)
+        print("Binarized Image")
+        reader = easyocr.Reader(['en'])
+        print("Reading image...")
+        results = reader.readtext(binarized_image)
+        print("Results")
+
+        print("Packets" + 'ml')
+
+        extracted_lines = []
+
+        for (bbox, text, confidence) in results:
+            print(f"Confidence -- {text}: {confidence}")
+            extracted_lines.append(text.strip())
+
+        lot_number_pattern = re.compile(r"LOT\s*NO[:\s]*([A-Za-z0-9\-]+)", re.IGNORECASE)
+
+        for line in extracted_lines:
+            match = lot_number_pattern.search(line)
+            if match:
+                lot_number = match.group(1)
+                print(f"Extracted LOT NO: {lot_number}")
+                return lot_number
+
+    async def process_vehicle_number(self):
+        print("Processing Vehicle Number")
+        if not hasattr(self, 'image_np') or self.image_path is None:
+            print("No valid image data available.")
+            return None
+
+        # Convert the image to grayscale for processing
+        image_file = self.image_path
+
+        if image_file.lower().endswith(('.png', '.jpg', '.jpeg')):
+            print(f"Processing {image_file}")
+
+            # Read the image
+            frame = cv2.imread(image_file)
+
+        print("Gray Image")
+
+        # Initialize YOLO model and PaddleOCR
+        model = YOLOv10("NumberPlate/weights/best.pt")
+
+        # Run YOLO model prediction
+        results = model.predict(frame, conf=0.2)
+
+        print("Results")
+
+        license_plates = []
+
+        for result in results:
+            print(f"License Plate -- {result}")
+            boxes = result.boxes
+            for box in boxes:
+                x1, y1, x2, y2 = map(int, box.xyxy[0])
+                label = self.paddle_ocr(frame, x1, y1, x2, y2)
+                if label:
+                    license_plates.append(label)
+
+        for license_plate in license_plates:
+            print(f"License Plate -- {license_plate}")
+
+        if len(license_plates) > 0:
+            return license_plates[0]
+
+        return None
+
+    def paddle_ocr(self, frame, x1, y1, x2, y2):
+        frame_crop = frame[y1:y2, x1:x2]
+        result = self.ocr.ocr(frame_crop, det=False, rec=True, cls=False)
+
+        text = ""
+        for r in result:
+            scores = r[0][1]
+            if not np.isnan(scores) and scores > 0.6:
+                text += r[0][0]
+        print("Stripping Text")
+        return text.strip()
+
+    @staticmethod
+    def ensure_base64_padding(base64_string):
+        missing_padding = len(base64_string) % 4
+        if missing_padding != 0:
+            base64_string += '=' * (4 - missing_padding)
+        return base64_string
+
+    async def send_message_to_unity(self, channel, msg_obj):
+        try:
+            message = MessagePack(channel=channel, data=msg_obj)
+            serialized_message = message.to_json()
+            await self.websocket.send(serialized_message)
+            print(f"Sent message to Unity: {serialized_message}")
+        except Exception as e:
+            print(f"Error sending message to Unity: {e}")
+
+
+class MessagePack:
+    def __init__(self, channel, data):
+        self.id = str(uuid.uuid4())
+        self.channel = channel
+        self.data = data
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "channel": self.channel,
+            "data": self.data,
+        }
+
+    def to_json(self):
+        return json.dumps(self.to_dict())
+
+
+async def echo(websocket):
+    handler = MessageHandler(websocket)
+    async for message in websocket:
+        await handler.handle_message(message)
+
+
+def get_local_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        s.connect(("8.8.8.8", 80))
+        local_ip = s.getsockname()[0]
+    except Exception as e:
+        print(f"Error determining local IP: {e}")
+        local_ip = "127.0.0.1"
+    finally:
+        s.close()
+    return local_ip
+
+
+async def main():
+    local_ip = get_local_ip()
+    # local_ip = "127.0.0.1"
+    async with websockets.serve(echo, local_ip, 8000):
+        print("Server Running at " + local_ip)
+        await asyncio.Future()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

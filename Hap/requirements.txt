@@ -1,0 +1,22 @@
+cvzone
+mediapipe==0.10.8
+tensorflow==2.15.0
+protobuf==3.20.3
+opencv-python == 4.10.0.84
+easyocr
+numpy==1.24.3
+scikit-learn
+ultralytics
+paddleocr
+Pillow
+fuzzywuzzy
+matplotlib
+websocket-client
+torch
+torchvision 
+torchaudio 
+paddlepaddle
+albumentations
+
+
+#pls use this cmd to install some libraries pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
