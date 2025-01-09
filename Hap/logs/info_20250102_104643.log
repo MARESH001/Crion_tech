@@ -1,0 +1,29 @@
+2025-01-02 10:46:55,721 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-02 10:47:09,507 - INFO - Routing message on channel: Question
+2025-01-02 10:47:16,355 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:47:16,378 - INFO - Image saved successfully
+2025-01-02 10:47:16,378 - INFO - Image processing completed successfully
+2025-01-02 10:47:20,850 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:47:20,881 - INFO - Image saved successfully
+2025-01-02 10:47:20,881 - INFO - Image processing completed successfully
+2025-01-02 10:47:20,881 - INFO - Routing message on channel: Question
+2025-01-02 10:47:20,881 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:47:21,753 - INFO - Milk detection result: FCM
+2025-01-02 10:47:21,753 - INFO - Valid result detected: FCM
+2025-01-02 10:47:21,753 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 10:47:21,753 - INFO - Result detected: FCM
+2025-01-02 10:47:21,753 - INFO - Field TYPE OF MILK processed with result: FCM
+2025-01-02 10:47:21,753 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 10:48:09,496 - ERROR - Timeout waiting for image to be ready for field: TYPE OF MILK
+2025-01-02 10:48:09,496 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 10:48:09,958 - INFO - Connection closed.
+2025-01-02 10:48:32,476 - INFO - Routing message on channel: Question
+2025-01-02 10:48:36,333 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:48:36,364 - INFO - Image saved successfully
+2025-01-02 10:48:36,364 - INFO - Image processing completed successfully
+2025-01-02 10:48:36,364 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 10:48:36,459 - INFO - Field TYPE OF LEAK processed with result: None
+2025-01-02 10:48:36,459 - INFO - No result found for field: TYPE OF LEAK
+2025-01-02 10:48:36,459 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 10:48:57,544 - INFO - Connection closed.
+2025-01-02 10:51:46,020 - INFO - Connection closed.

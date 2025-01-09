@@ -1,0 +1,12 @@
+2025-01-01 21:48:39,708 - ERROR - Timeout waiting for image to be ready for field: TYPE OF MILK
+C:\CLONOS\Hap1 (4)\Hap1\Hap\Message_handler\logger.py:56
+
+2025-01-01 21:48:39,708 - ERROR - Error sending message to Unity: no close frame received or sent
+C:\CLONOS\Hap1 (4)\Hap1\Hap\Message_handler\logger.py:56
+
+2025-01-01 21:48:58,699 - ERROR - Timeout waiting for image to be ready for field: TYPE OF MILK
+C:\CLONOS\Hap1 (4)\Hap1\Hap\Message_handler\logger.py:56
+
+2025-01-01 21:49:02,943 - ERROR - Error sending message to Unity: no close frame received or sent
+C:\CLONOS\Hap1 (4)\Hap1\Hap\Message_handler\logger.py:56
+

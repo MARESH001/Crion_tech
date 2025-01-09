@@ -1,0 +1,42 @@
+2025-01-02 04:11:16,421 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-02 04:11:51,685 - INFO - Routing message on channel: Question
+2025-01-02 04:11:57,940 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:11:57,971 - INFO - Image saved successfully
+2025-01-02 04:11:57,971 - INFO - Image processing completed successfully
+2025-01-02 04:11:57,971 - INFO - Processing field: TYPE OF MILK
+2025-01-02 04:11:58,826 - INFO - Milk detection result: FCM
+2025-01-02 04:11:58,826 - INFO - Valid result detected: FCM
+2025-01-02 04:11:58,826 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 04:11:58,826 - INFO - Field TYPE OF MILK processed with result: FCM
+2025-01-02 04:11:58,826 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 04:12:35,418 - INFO - Routing message on channel: Question
+2025-01-02 04:12:42,563 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:12:42,594 - INFO - Image saved successfully
+2025-01-02 04:12:42,594 - INFO - Image processing completed successfully
+2025-01-02 04:12:42,594 - INFO - Processing field: TYPE OF MILK
+2025-01-02 04:12:43,094 - INFO - Milk detection result: SM
+2025-01-02 04:12:43,094 - INFO - Valid result detected: SM
+2025-01-02 04:12:43,094 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 04:12:43,094 - INFO - Field TYPE OF MILK processed with result: SM
+2025-01-02 04:12:43,094 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 04:12:48,619 - INFO - Routing message on channel: Question
+2025-01-02 04:12:56,880 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:12:56,912 - INFO - Image saved successfully
+2025-01-02 04:12:56,912 - INFO - Image processing completed successfully
+2025-01-02 04:12:56,912 - INFO - Processing field: TYPE OF MILK
+2025-01-02 04:12:57,418 - INFO - Milk detection result: SM
+2025-01-02 04:12:57,418 - INFO - Valid result detected: SM
+2025-01-02 04:12:57,418 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 04:12:57,418 - INFO - Field TYPE OF MILK processed with result: SM
+2025-01-02 04:12:57,418 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 04:13:13,289 - INFO - Routing message on channel: Question
+2025-01-02 04:13:18,915 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:13:18,946 - INFO - Image saved successfully
+2025-01-02 04:13:18,946 - INFO - Image processing completed successfully
+2025-01-02 04:13:18,946 - INFO - Processing field: TYPE OF MILK
+2025-01-02 04:13:19,438 - INFO - Milk detection result: SM
+2025-01-02 04:13:19,438 - INFO - Valid result detected: SM
+2025-01-02 04:13:19,438 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 04:13:19,438 - INFO - Field TYPE OF MILK processed with result: SM
+2025-01-02 04:13:19,438 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 04:13:59,491 - INFO - Connection closed.

@@ -1,0 +1,30 @@
+2025-01-02 10:43:31,032 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-02 10:43:59,699 - INFO - Routing message on channel: Question
+2025-01-02 10:44:02,452 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:44:02,484 - INFO - Image saved successfully
+2025-01-02 10:44:02,484 - INFO - Image processing completed successfully
+2025-01-02 10:44:02,484 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 10:44:02,595 - INFO - Field TYPE OF LEAK processed with result: None
+2025-01-02 10:44:02,595 - INFO - No result found for field: TYPE OF LEAK
+2025-01-02 10:44:02,595 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 10:44:15,391 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:44:15,423 - INFO - Image saved successfully
+2025-01-02 10:44:15,423 - INFO - Image processing completed successfully
+2025-01-02 10:44:20,191 - INFO - Routing message on channel: Question
+2025-01-02 10:44:20,191 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 10:44:20,238 - INFO - Field TYPE OF LEAK processed with result: None
+2025-01-02 10:44:20,238 - INFO - No result found for field: TYPE OF LEAK
+2025-01-02 10:44:20,238 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 10:46:35,920 - INFO - Routing message on channel: Question
+2025-01-02 10:46:35,971 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:46:36,003 - INFO - Image saved successfully
+2025-01-02 10:46:36,003 - INFO - Image processing completed successfully
+2025-01-02 10:46:36,003 - INFO - Routing message on channel: Question
+2025-01-02 10:46:36,003 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:46:36,003 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:46:36,096 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:46:36,141 - INFO - Image saved successfully
+2025-01-02 10:46:36,141 - INFO - Image processing completed successfully
+2025-01-02 10:46:36,159 - INFO - Routing message on channel: Question
+2025-01-02 10:46:36,173 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:46:36,377 - INFO - Connection closed.

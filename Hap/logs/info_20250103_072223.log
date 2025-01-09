@@ -1,0 +1,30 @@
+2025-01-03 07:22:35,637 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-03 07:22:49,823 - INFO - Routing message on channel: Question
+2025-01-03 07:23:48,810 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 07:23:48,856 - INFO - Image saved successfully
+2025-01-03 07:23:48,872 - INFO - Image processing completed successfully
+2025-01-03 07:23:48,872 - INFO - Processing field: TYPE OF MILK
+2025-01-03 07:23:49,106 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 07:23:49,137 - INFO - Image saved successfully
+2025-01-03 07:23:49,153 - INFO - Image processing completed successfully
+2025-01-03 07:23:49,278 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 07:23:49,450 - INFO - Image saved successfully
+2025-01-03 07:23:49,450 - INFO - Image processing completed successfully
+2025-01-03 07:23:49,747 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 07:23:49,778 - INFO - Image saved successfully
+2025-01-03 07:23:49,778 - INFO - Image processing completed successfully
+2025-01-03 07:23:49,778 - INFO - Routing message on channel: Question
+2025-01-03 07:23:49,794 - INFO - Processing field: TYPE OF MILK
+2025-01-03 07:23:50,278 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 07:23:50,512 - INFO - Image saved successfully
+2025-01-03 07:23:50,512 - INFO - Image processing completed successfully
+2025-01-03 07:23:50,544 - INFO - Milk detection result: None
+2025-01-03 07:23:50,544 - INFO - No valid detection result
+2025-01-03 07:23:50,544 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-03 07:23:50,544 - INFO - No result found for field: TYPE OF MILK
+2025-01-03 07:23:50,559 - INFO - Successfully sent message to Unity on channel Error
+2025-01-03 07:23:50,872 - INFO - Milk detection result: None
+2025-01-03 07:23:50,872 - INFO - No valid detection result
+2025-01-03 07:23:50,872 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-03 07:23:50,872 - INFO - No result found for field: TYPE OF MILK
+2025-01-03 07:23:50,872 - INFO - Successfully sent message to Unity on channel Error

@@ -1,0 +1,61 @@
+2025-01-02 03:59:16,525 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-02 03:59:32,924 - INFO - Routing message on channel: Question
+2025-01-02 03:59:45,001 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 03:59:45,033 - INFO - Image saved successfully
+2025-01-02 03:59:45,033 - INFO - Image processing completed successfully
+2025-01-02 03:59:45,033 - INFO - Processing field: TYPE OF MILK
+2025-01-02 03:59:45,033 - INFO - Milk detection result: None
+2025-01-02 03:59:45,033 - INFO - No valid detection result
+2025-01-02 03:59:45,033 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-02 03:59:45,033 - INFO - No result found for field: TYPE OF MILK
+2025-01-02 03:59:45,033 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 03:59:55,306 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 03:59:55,338 - INFO - Image saved successfully
+2025-01-02 03:59:55,338 - INFO - Image processing completed successfully
+2025-01-02 03:59:56,791 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 03:59:56,806 - INFO - Image saved successfully
+2025-01-02 03:59:56,806 - INFO - Image processing completed successfully
+2025-01-02 03:59:59,115 - INFO - Routing message on channel: Question
+2025-01-02 03:59:59,115 - INFO - Processing field: TYPE OF MILK
+2025-01-02 03:59:59,115 - INFO - Milk detection result: None
+2025-01-02 03:59:59,115 - INFO - No valid detection result
+2025-01-02 03:59:59,115 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-02 03:59:59,115 - INFO - No result found for field: TYPE OF MILK
+2025-01-02 03:59:59,131 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 04:00:03,717 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:00:03,744 - INFO - Image saved successfully
+2025-01-02 04:00:03,744 - INFO - Image processing completed successfully
+2025-01-02 04:00:07,004 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:00:07,035 - INFO - Image saved successfully
+2025-01-02 04:00:07,035 - INFO - Image processing completed successfully
+2025-01-02 04:00:10,801 - INFO - Routing message on channel: Question
+2025-01-02 04:00:10,801 - INFO - Processing field: TYPE OF MILK
+2025-01-02 04:00:10,801 - INFO - Milk detection result: None
+2025-01-02 04:00:10,801 - INFO - No valid detection result
+2025-01-02 04:00:10,801 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-02 04:00:10,801 - INFO - No result found for field: TYPE OF MILK
+2025-01-02 04:00:10,801 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 04:00:14,924 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:00:14,940 - INFO - Image saved successfully
+2025-01-02 04:00:14,940 - INFO - Image processing completed successfully
+2025-01-02 04:00:18,882 - INFO - Routing message on channel: Question
+2025-01-02 04:00:18,898 - INFO - Processing field: TYPE OF MILK
+2025-01-02 04:00:18,898 - INFO - Milk detection result: None
+2025-01-02 04:00:18,898 - INFO - No valid detection result
+2025-01-02 04:00:18,898 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-02 04:00:18,898 - INFO - No result found for field: TYPE OF MILK
+2025-01-02 04:00:18,898 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 04:00:22,437 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:00:22,469 - INFO - Image saved successfully
+2025-01-02 04:00:22,469 - INFO - Image processing completed successfully
+2025-01-02 04:01:05,202 - INFO - Routing message on channel: Question
+2025-01-02 04:01:05,202 - INFO - Processing field: TYPE OF MILK
+2025-01-02 04:01:05,202 - INFO - Milk detection result: None
+2025-01-02 04:01:05,202 - INFO - No valid detection result
+2025-01-02 04:01:05,202 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-02 04:01:05,202 - INFO - No result found for field: TYPE OF MILK
+2025-01-02 04:01:05,202 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 04:01:09,088 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 04:01:09,119 - INFO - Image saved successfully
+2025-01-02 04:01:09,119 - INFO - Image processing completed successfully
+2025-01-02 04:01:19,026 - INFO - Connection closed.

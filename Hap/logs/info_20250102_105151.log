@@ -1,0 +1,10 @@
+2025-01-02 10:52:03,317 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-02 10:52:05,487 - INFO - Routing message on channel: Question
+2025-01-02 10:52:08,324 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:52:08,356 - INFO - Image saved successfully
+2025-01-02 10:52:08,356 - INFO - Image processing completed successfully
+2025-01-02 10:52:08,356 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 10:52:08,474 - INFO - Field TYPE OF LEAK processed with result: None
+2025-01-02 10:52:08,474 - INFO - No result found for field: TYPE OF LEAK
+2025-01-02 10:52:08,474 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 10:53:25,475 - INFO - Connection closed.

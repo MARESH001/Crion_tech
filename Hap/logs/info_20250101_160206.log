@@ -1,0 +1,44 @@
+2025-01-01 16:02:18,980 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-01 16:02:48,693 - INFO - Routing message on channel: Question
+2025-01-01 16:02:51,629 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 16:02:51,661 - INFO - Image saved successfully
+2025-01-01 16:02:51,661 - INFO - Image processing completed successfully
+2025-01-01 16:02:51,661 - INFO - Processing field: TYPE OF MILK
+2025-01-01 16:02:52,528 - INFO - Field TYPE OF MILK processed with result: ['No valid milk types detected']
+2025-01-01 16:02:52,528 - INFO - Successfully sent message to Unity on channel Result
+2025-01-01 16:03:21,118 - INFO - Routing message on channel: Question
+2025-01-01 16:03:25,755 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 16:03:25,771 - INFO - Image saved successfully
+2025-01-01 16:03:25,778 - INFO - Image processing completed successfully
+2025-01-01 16:03:25,778 - INFO - Processing field: TYPE OF MILK
+2025-01-01 16:03:26,278 - INFO - Field TYPE OF MILK processed with result: ['No valid milk types detected']
+2025-01-01 16:03:26,278 - INFO - Successfully sent message to Unity on channel Result
+2025-01-01 16:03:30,969 - INFO - Routing message on channel: Question
+2025-01-01 16:03:33,330 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 16:03:33,346 - INFO - Image saved successfully
+2025-01-01 16:03:33,346 - INFO - Image processing completed successfully
+2025-01-01 16:03:33,361 - INFO - Processing field: TYPE OF MILK
+2025-01-01 16:03:33,852 - INFO - Field TYPE OF MILK processed with result: ['No valid milk types detected']
+2025-01-01 16:03:33,868 - INFO - Successfully sent message to Unity on channel Result
+2025-01-01 16:03:39,400 - INFO - Routing message on channel: Question
+2025-01-01 16:03:42,392 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 16:03:42,408 - INFO - Image saved successfully
+2025-01-01 16:03:42,408 - INFO - Image processing completed successfully
+2025-01-01 16:03:42,408 - INFO - Processing field: TYPE OF MILK
+2025-01-01 16:03:42,804 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 16:03:42,841 - INFO - Image saved successfully
+2025-01-01 16:03:42,841 - INFO - Image processing completed successfully
+2025-01-01 16:03:42,978 - INFO - Field TYPE OF MILK processed with result: ['No valid milk types detected']
+2025-01-01 16:03:42,978 - INFO - Successfully sent message to Unity on channel Result
+2025-01-01 16:03:46,635 - INFO - Routing message on channel: Question
+2025-01-01 16:03:46,635 - INFO - Processing field: TYPE OF MILK
+2025-01-01 16:03:47,137 - INFO - Field TYPE OF MILK processed with result: ['No valid milk types detected']
+2025-01-01 16:03:47,137 - INFO - Successfully sent message to Unity on channel Result
+2025-01-01 16:03:49,275 - INFO - Routing message on channel: Question
+2025-01-01 16:03:52,542 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 16:03:52,573 - INFO - Image saved successfully
+2025-01-01 16:03:52,573 - INFO - Image processing completed successfully
+2025-01-01 16:03:52,573 - INFO - Processing field: TYPE OF MILK
+2025-01-01 16:03:53,262 - INFO - Field TYPE OF MILK processed with result: ['No valid milk types detected']
+2025-01-01 16:03:53,262 - INFO - Successfully sent message to Unity on channel Result
+2025-01-01 16:07:17,499 - INFO - Connection closed.

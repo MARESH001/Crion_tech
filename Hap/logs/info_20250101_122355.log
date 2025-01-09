@@ -1,0 +1,168 @@
+2025-01-01 12:24:07,471 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-01 12:24:16,860 - INFO - Routing message on channel: Question
+2025-01-01 12:24:20,709 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:24:20,740 - INFO - Image saved successfully
+2025-01-01 12:24:20,740 - INFO - Image processing completed successfully
+2025-01-01 12:24:20,740 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:24:21,595 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:24:21,595 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:24:21,595 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:24:38,840 - INFO - Routing message on channel: Question
+2025-01-01 12:24:43,690 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:24:43,721 - INFO - Image saved successfully
+2025-01-01 12:24:43,721 - INFO - Image processing completed successfully
+2025-01-01 12:24:43,721 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:24:44,221 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:24:44,221 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:24:44,221 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:24:57,350 - INFO - Routing message on channel: Question
+2025-01-01 12:25:04,402 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:25:04,418 - INFO - Image saved successfully
+2025-01-01 12:25:04,418 - INFO - Image processing completed successfully
+2025-01-01 12:25:04,418 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:25:04,908 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:25:04,908 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:25:04,908 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:25:38,050 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:25:38,063 - INFO - Image saved successfully
+2025-01-01 12:25:38,063 - INFO - Image processing completed successfully
+2025-01-01 12:25:42,960 - INFO - Routing message on channel: Question
+2025-01-01 12:25:42,960 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:25:43,467 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:25:43,467 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:25:43,467 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:25:47,237 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:25:47,249 - INFO - Image saved successfully
+2025-01-01 12:25:47,249 - INFO - Image processing completed successfully
+2025-01-01 12:26:13,700 - INFO - Routing message on channel: Question
+2025-01-01 12:26:13,700 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:26:14,190 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:26:14,190 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:26:14,190 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:26:23,883 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:26:23,914 - INFO - Image saved successfully
+2025-01-01 12:26:23,914 - INFO - Image processing completed successfully
+2025-01-01 12:26:43,446 - INFO - Routing message on channel: Question
+2025-01-01 12:26:43,446 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:26:44,222 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:26:44,222 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:26:44,222 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:26:55,176 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:26:55,208 - INFO - Image saved successfully
+2025-01-01 12:26:55,208 - INFO - Image processing completed successfully
+2025-01-01 12:27:00,766 - INFO - Routing message on channel: Question
+2025-01-01 12:27:00,766 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:27:01,284 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:27:01,284 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:27:01,284 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:27:30,261 - INFO - Routing message on channel: Question
+2025-01-01 12:27:32,825 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:27:32,841 - INFO - Image saved successfully
+2025-01-01 12:27:32,841 - INFO - Image processing completed successfully
+2025-01-01 12:27:32,841 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:27:33,347 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:27:33,347 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:27:33,347 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:27:39,794 - INFO - Routing message on channel: Question
+2025-01-01 12:27:49,441 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:27:49,457 - INFO - Image saved successfully
+2025-01-01 12:27:49,457 - INFO - Image processing completed successfully
+2025-01-01 12:27:49,457 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:27:49,957 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:27:49,957 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:27:49,957 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:27:58,238 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:27:58,254 - INFO - Image saved successfully
+2025-01-01 12:27:58,254 - INFO - Image processing completed successfully
+2025-01-01 12:28:03,052 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:28:03,068 - INFO - Image saved successfully
+2025-01-01 12:28:03,068 - INFO - Image processing completed successfully
+2025-01-01 12:28:06,913 - INFO - Routing message on channel: Question
+2025-01-01 12:28:06,913 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:28:07,394 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:28:07,394 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:28:07,394 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:28:15,010 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:28:15,041 - INFO - Image saved successfully
+2025-01-01 12:28:15,041 - INFO - Image processing completed successfully
+2025-01-01 12:28:37,535 - INFO - Routing message on channel: Question
+2025-01-01 12:28:37,535 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:28:38,035 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:28:38,035 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:28:38,035 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:28:44,832 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:28:44,864 - INFO - Image saved successfully
+2025-01-01 12:28:44,864 - INFO - Image processing completed successfully
+2025-01-01 12:28:48,808 - INFO - Routing message on channel: Question
+2025-01-01 12:28:48,808 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:28:49,315 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:28:49,315 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:28:49,315 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:29:03,245 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:29:03,276 - INFO - Image saved successfully
+2025-01-01 12:29:03,276 - INFO - Image processing completed successfully
+2025-01-01 12:29:09,666 - INFO - Routing message on channel: Question
+2025-01-01 12:29:09,666 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:29:10,250 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:29:10,250 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:29:10,250 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:29:26,083 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:29:26,094 - INFO - Image saved successfully
+2025-01-01 12:29:26,094 - INFO - Image processing completed successfully
+2025-01-01 12:29:28,333 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:29:28,348 - INFO - Image saved successfully
+2025-01-01 12:29:28,348 - INFO - Image processing completed successfully
+2025-01-01 12:29:31,073 - INFO - Routing message on channel: Question
+2025-01-01 12:29:31,073 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:29:31,567 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:29:31,567 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:29:31,582 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:29:49,436 - INFO - Routing message on channel: Question
+2025-01-01 12:29:52,645 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:29:52,676 - INFO - Image saved successfully
+2025-01-01 12:29:52,676 - INFO - Image processing completed successfully
+2025-01-01 12:29:52,676 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:29:53,176 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:29:53,176 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:29:53,176 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:30:28,344 - INFO - Routing message on channel: Question
+2025-01-01 12:30:32,853 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:30:32,885 - INFO - Image saved successfully
+2025-01-01 12:30:32,885 - INFO - Image processing completed successfully
+2025-01-01 12:30:32,885 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:30:33,391 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:30:33,391 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:30:33,391 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:30:48,195 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:30:48,226 - INFO - Image saved successfully
+2025-01-01 12:30:48,226 - INFO - Image processing completed successfully
+2025-01-01 12:30:54,517 - INFO - Routing message on channel: Question
+2025-01-01 12:30:54,517 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:30:55,017 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:30:55,017 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:30:55,017 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:31:00,833 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:31:00,845 - INFO - Image saved successfully
+2025-01-01 12:31:00,845 - INFO - Image processing completed successfully
+2025-01-01 12:31:03,423 - INFO - Routing message on channel: Question
+2025-01-01 12:31:03,423 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:31:03,927 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:31:03,927 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:31:03,927 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:31:09,510 - INFO - Routing message on channel: Question
+2025-01-01 12:31:13,618 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:31:13,650 - INFO - Image saved successfully
+2025-01-01 12:31:13,650 - INFO - Image processing completed successfully
+2025-01-01 12:31:13,650 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:31:14,271 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:31:14,271 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:31:14,271 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:31:23,709 - INFO - Routing message on channel: Question
+2025-01-01 12:31:26,745 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 12:31:26,777 - INFO - Image saved successfully
+2025-01-01 12:31:26,777 - INFO - Image processing completed successfully
+2025-01-01 12:31:26,777 - INFO - Processing field: TYPE OF MILK
+2025-01-01 12:31:27,283 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 12:31:27,283 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 12:31:27,283 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 12:32:20,238 - INFO - Connection closed.

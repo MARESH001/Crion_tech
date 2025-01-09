@@ -1,0 +1,16 @@
+2025-01-03 07:19:04,479 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-03 07:20:18,475 - INFO - Routing message on channel: Question
+2025-01-03 07:20:23,885 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 07:20:23,917 - INFO - Image saved successfully
+2025-01-03 07:20:23,917 - INFO - Image processing completed successfully
+2025-01-03 07:20:23,917 - INFO - Processing field: TYPE OF MILK
+2025-01-03 07:20:24,823 - INFO - Milk detection result: SM
+2025-01-03 07:20:24,823 - INFO - Valid result detected: SM
+2025-01-03 07:20:24,823 - INFO - Current question or fieldValue not properly initialized
+2025-01-03 07:20:24,823 - INFO - Result detected: SM
+2025-01-03 07:20:24,823 - INFO - Field TYPE OF MILK processed with result: SM
+2025-01-03 07:20:24,823 - INFO - Successfully sent message to Unity on channel Result
+2025-01-03 07:20:25,776 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 07:20:25,808 - INFO - Image saved successfully
+2025-01-03 07:20:25,808 - INFO - Image processing completed successfully
+2025-01-03 07:21:00,870 - INFO - Connection closed.

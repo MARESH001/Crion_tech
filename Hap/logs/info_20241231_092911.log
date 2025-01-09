@@ -1,0 +1,10 @@
+2024-12-31 09:29:23,934 - INFO - Server started at ws://10.0.0.5:8000
+2024-12-31 09:30:09,423 - INFO - Routing message on channel: Question
+2024-12-31 09:30:11,966 - INFO - Routing message on channel: ImageStreaming
+2024-12-31 09:30:11,992 - INFO - Image saved successfully
+2024-12-31 09:30:11,997 - INFO - Image processing completed successfully
+2024-12-31 09:30:11,997 - INFO - Processing field: TYPE OF MILK
+2024-12-31 09:30:12,028 - INFO - Field TYPE OF MILK processed with result: None
+2024-12-31 09:30:12,028 - INFO - No result found for field: TYPE OF MILK
+2024-12-31 09:30:12,028 - INFO - Successfully sent message to Unity on channel Error
+2024-12-31 09:32:48,702 - INFO - Connection closed.

@@ -1,0 +1,92 @@
+2025-01-03 18:34:26,050 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-03 18:36:42,154 - INFO - Routing message on channel: Question
+2025-01-03 18:36:48,720 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:36:48,778 - INFO - Image saved successfully
+2025-01-03 18:36:48,778 - INFO - Image processing completed successfully
+2025-01-03 18:36:48,783 - INFO - Processing field: TYPE OF MILK
+2025-01-03 18:36:49,168 - INFO - Milk detection result: None
+2025-01-03 18:36:49,168 - INFO - No valid detection result
+2025-01-03 18:36:49,168 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-03 18:36:49,168 - INFO - No result found for field: TYPE OF MILK
+2025-01-03 18:36:49,168 - INFO - Successfully sent message to Unity on channel Error
+2025-01-03 18:37:04,305 - INFO - Routing message on channel: Question
+2025-01-03 18:37:13,533 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:37:13,559 - INFO - Image saved successfully
+2025-01-03 18:37:13,559 - INFO - Image processing completed successfully
+2025-01-03 18:37:13,565 - INFO - Processing field: TYPE OF MILK
+2025-01-03 18:37:13,871 - INFO - Milk detection result: None
+2025-01-03 18:37:13,871 - INFO - No valid detection result
+2025-01-03 18:37:13,871 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-03 18:37:13,871 - INFO - No result found for field: TYPE OF MILK
+2025-01-03 18:37:13,871 - INFO - Successfully sent message to Unity on channel Error
+2025-01-03 18:37:24,277 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:37:24,309 - INFO - Image saved successfully
+2025-01-03 18:37:24,309 - INFO - Image processing completed successfully
+2025-01-03 18:37:43,984 - INFO - Routing message on channel: Question
+2025-01-03 18:37:43,984 - INFO - Processing field: TYPE OF MILK
+2025-01-03 18:37:44,286 - INFO - Milk detection result: None
+2025-01-03 18:37:44,286 - INFO - No valid detection result
+2025-01-03 18:37:44,286 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-03 18:37:44,286 - INFO - No result found for field: TYPE OF MILK
+2025-01-03 18:37:44,286 - INFO - Successfully sent message to Unity on channel Error
+2025-01-03 18:38:03,146 - INFO - Routing message on channel: Question
+2025-01-03 18:38:11,653 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:38:11,698 - INFO - Image saved successfully
+2025-01-03 18:38:11,698 - INFO - Image processing completed successfully
+2025-01-03 18:38:11,698 - INFO - Processing field: SKU
+2025-01-03 18:38:36,903 - INFO - Field SKU processed with result: None
+2025-01-03 18:38:36,903 - INFO - No result found for field: SKU
+2025-01-03 18:38:36,903 - INFO - Successfully sent message to Unity on channel Error
+2025-01-03 18:39:06,547 - INFO - Routing message on channel: Question
+2025-01-03 18:39:11,699 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:39:11,730 - INFO - Image saved successfully
+2025-01-03 18:39:11,730 - INFO - Image processing completed successfully
+2025-01-03 18:39:11,730 - INFO - Processing field: SKU
+2025-01-03 18:39:36,357 - INFO - Field SKU processed with result: None
+2025-01-03 18:39:36,357 - INFO - No result found for field: SKU
+2025-01-03 18:39:36,357 - INFO - Successfully sent message to Unity on channel Error
+2025-01-03 18:39:59,964 - INFO - Routing message on channel: Question
+2025-01-03 18:40:04,795 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:40:04,826 - INFO - Image saved successfully
+2025-01-03 18:40:04,826 - INFO - Image processing completed successfully
+2025-01-03 18:40:04,826 - INFO - Processing field: SKU
+2025-01-03 18:40:29,429 - INFO - Result detected: 500
+2025-01-03 18:40:29,429 - INFO - Field SKU processed with result: 500
+2025-01-03 18:40:29,429 - INFO - Successfully sent message to Unity on channel Result
+2025-01-03 18:41:02,435 - INFO - Routing message on channel: Question
+2025-01-03 18:41:07,843 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:41:07,879 - INFO - Image saved successfully
+2025-01-03 18:41:07,879 - INFO - Image processing completed successfully
+2025-01-03 18:41:07,895 - INFO - Processing field: SKU
+2025-01-03 18:41:14,483 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:41:14,593 - INFO - Image saved successfully
+2025-01-03 18:41:14,593 - INFO - Image processing completed successfully
+2025-01-03 18:41:33,046 - INFO - Result detected: 500
+2025-01-03 18:41:33,046 - INFO - Field SKU processed with result: 500
+2025-01-03 18:41:33,046 - INFO - Successfully sent message to Unity on channel Result
+2025-01-03 18:41:58,646 - INFO - Routing message on channel: Question
+2025-01-03 18:41:58,646 - INFO - Processing field: TYPE OF MILK
+2025-01-03 18:41:58,937 - INFO - Milk detection result: None
+2025-01-03 18:41:58,937 - INFO - No valid detection result
+2025-01-03 18:41:58,937 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-03 18:41:58,937 - INFO - No result found for field: TYPE OF MILK
+2025-01-03 18:41:58,937 - INFO - Successfully sent message to Unity on channel Error
+2025-01-03 18:42:10,881 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:42:10,912 - INFO - Image saved successfully
+2025-01-03 18:42:10,912 - INFO - Image processing completed successfully
+2025-01-03 18:43:23,848 - INFO - Routing message on channel: Question
+2025-01-03 18:43:23,848 - INFO - Processing field: TYPE OF MILK
+2025-01-03 18:43:24,204 - INFO - Milk detection result: None
+2025-01-03 18:43:24,204 - INFO - No valid detection result
+2025-01-03 18:43:24,204 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-03 18:43:24,204 - INFO - No result found for field: TYPE OF MILK
+2025-01-03 18:43:24,204 - INFO - Successfully sent message to Unity on channel Error
+2025-01-03 18:43:36,768 - INFO - Routing message on channel: Question
+2025-01-03 18:43:55,581 - INFO - Routing message on channel: ImageStreaming
+2025-01-03 18:43:55,597 - INFO - Image saved successfully
+2025-01-03 18:43:55,597 - INFO - Image processing completed successfully
+2025-01-03 18:43:55,597 - INFO - Processing field: SKU
+2025-01-03 18:44:20,845 - INFO - Result detected: 1000
+2025-01-03 18:44:20,845 - INFO - Field SKU processed with result: 1000
+2025-01-03 18:44:20,845 - INFO - Successfully sent message to Unity on channel Result
+2025-01-03 18:44:38,455 - INFO - Connection closed.

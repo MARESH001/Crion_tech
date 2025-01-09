@@ -1,0 +1,12 @@
+2025-01-01 22:08:48,249 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-01 22:08:53,372 - INFO - Routing message on channel: Question
+2025-01-01 22:08:56,628 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 22:08:56,660 - INFO - Image saved successfully
+2025-01-01 22:08:56,660 - INFO - Image processing completed successfully
+2025-01-01 22:08:56,660 - INFO - Processing field: TYPE OF MILK
+2025-01-01 22:08:57,515 - INFO - Milk detection result: None
+2025-01-01 22:08:57,515 - INFO - No valid detection result
+2025-01-01 22:08:57,530 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 22:08:57,530 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 22:08:57,530 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 22:11:05,347 - INFO - Connection closed.

@@ -1,0 +1,80 @@
+2025-01-02 10:56:30,867 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-02 10:58:08,613 - INFO - Routing message on channel: Question
+2025-01-02 10:58:13,406 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:58:13,437 - INFO - Image saved successfully
+2025-01-02 10:58:13,437 - INFO - Image processing completed successfully
+2025-01-02 10:58:13,437 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:58:14,305 - INFO - Milk detection result: FCM
+2025-01-02 10:58:14,305 - INFO - Valid result detected: FCM
+2025-01-02 10:58:14,305 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 10:58:14,305 - INFO - Result detected: FCM
+2025-01-02 10:58:14,305 - INFO - Field TYPE OF MILK processed with result: FCM
+2025-01-02 10:58:14,305 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 10:58:23,935 - INFO - Routing message on channel: Question
+2025-01-02 10:58:28,325 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:58:28,341 - INFO - Image saved successfully
+2025-01-02 10:58:28,341 - INFO - Image processing completed successfully
+2025-01-02 10:58:28,352 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:58:28,852 - INFO - Milk detection result: FCM
+2025-01-02 10:58:28,852 - INFO - Valid result detected: FCM
+2025-01-02 10:58:28,852 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 10:58:28,852 - INFO - Result detected: FCM
+2025-01-02 10:58:28,852 - INFO - Field TYPE OF MILK processed with result: FCM
+2025-01-02 10:58:28,852 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 10:58:36,499 - INFO - Routing message on channel: Question
+2025-01-02 10:58:40,422 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:58:40,446 - INFO - Image saved successfully
+2025-01-02 10:58:40,446 - INFO - Image processing completed successfully
+2025-01-02 10:58:40,446 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:58:40,946 - INFO - Milk detection result: SM
+2025-01-02 10:58:40,946 - INFO - Valid result detected: SM
+2025-01-02 10:58:40,946 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 10:58:40,946 - INFO - Result detected: SM
+2025-01-02 10:58:40,946 - INFO - Field TYPE OF MILK processed with result: SM
+2025-01-02 10:58:40,946 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 10:59:06,935 - INFO - Routing message on channel: Question
+2025-01-02 10:59:12,696 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:59:12,715 - INFO - Image saved successfully
+2025-01-02 10:59:12,715 - INFO - Image processing completed successfully
+2025-01-02 10:59:12,715 - INFO - Processing field: SKU
+2025-01-02 10:59:37,745 - INFO - Field SKU processed with result: None
+2025-01-02 10:59:37,745 - INFO - No result found for field: SKU
+2025-01-02 10:59:37,745 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 10:59:50,709 - INFO - Routing message on channel: Question
+2025-01-02 11:00:01,773 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 11:00:01,805 - INFO - Image saved successfully
+2025-01-02 11:00:01,805 - INFO - Image processing completed successfully
+2025-01-02 11:00:01,805 - INFO - Processing field: Batch Code
+2025-01-02 11:00:01,805 - INFO - Field Batch Code processed with result: None
+2025-01-02 11:00:01,805 - INFO - No result found for field: Batch Code
+2025-01-02 11:00:01,805 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 11:00:07,766 - INFO - Routing message on channel: Question
+2025-01-02 11:00:21,012 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 11:00:21,027 - INFO - Image saved successfully
+2025-01-02 11:00:21,027 - INFO - Image processing completed successfully
+2025-01-02 11:00:21,027 - INFO - Processing field: SKU
+2025-01-02 11:00:46,744 - INFO - Result detected: 500
+2025-01-02 11:00:46,744 - INFO - Field SKU processed with result: 500
+2025-01-02 11:00:46,759 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 11:01:13,207 - INFO - Routing message on channel: Question
+2025-01-02 11:01:24,599 - INFO - Routing message on channel: Question
+2025-01-02 11:01:28,176 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 11:01:28,192 - INFO - Image saved successfully
+2025-01-02 11:01:28,192 - INFO - Image processing completed successfully
+2025-01-02 11:01:28,197 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 11:01:31,307 - INFO - Result detected: Vertical
+2025-01-02 11:01:31,307 - INFO - Field TYPE OF LEAK processed with result: Vertical
+2025-01-02 11:01:31,307 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 11:01:31,307 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 11:01:33,713 - INFO - Result detected: Vertical
+2025-01-02 11:01:33,713 - INFO - Field TYPE OF LEAK processed with result: Vertical
+2025-01-02 11:01:33,713 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 11:01:38,736 - INFO - Routing message on channel: Question
+2025-01-02 11:01:42,729 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 11:01:42,744 - INFO - Image saved successfully
+2025-01-02 11:01:42,744 - INFO - Image processing completed successfully
+2025-01-02 11:01:42,744 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 11:01:45,166 - INFO - Result detected: Pin Hole
+2025-01-02 11:01:45,166 - INFO - Field TYPE OF LEAK processed with result: Pin Hole
+2025-01-02 11:01:45,166 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 11:08:24,076 - INFO - Connection closed.

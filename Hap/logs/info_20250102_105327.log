@@ -1,0 +1,21 @@
+2025-01-02 10:53:39,615 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-02 10:53:47,223 - INFO - Routing message on channel: Question
+2025-01-02 10:53:50,131 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:53:50,158 - INFO - Image saved successfully
+2025-01-02 10:53:50,162 - INFO - Image processing completed successfully
+2025-01-02 10:53:50,162 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 10:53:53,820 - INFO - Result detected: Horizontal
+2025-01-02 10:53:53,820 - INFO - Field TYPE OF LEAK processed with result: Horizontal
+2025-01-02 10:53:53,820 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 10:54:05,784 - INFO - Routing message on channel: Question
+2025-01-02 10:54:12,350 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:54:12,381 - INFO - Image saved successfully
+2025-01-02 10:54:12,381 - INFO - Image processing completed successfully
+2025-01-02 10:54:12,381 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:54:13,241 - INFO - Milk detection result: FCM
+2025-01-02 10:54:13,241 - INFO - Valid result detected: FCM
+2025-01-02 10:54:13,241 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 10:54:13,241 - INFO - Result detected: FCM
+2025-01-02 10:54:13,241 - INFO - Field TYPE OF MILK processed with result: FCM
+2025-01-02 10:54:13,241 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 10:55:45,557 - INFO - Connection closed.

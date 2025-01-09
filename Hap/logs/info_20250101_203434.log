@@ -1,0 +1,17 @@
+2025-01-01 20:34:46,642 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-01 20:34:52,607 - INFO - Routing message on channel: Question
+2025-01-01 20:34:57,970 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 20:34:57,995 - INFO - Image saved successfully
+2025-01-01 20:34:57,995 - INFO - Image processing completed successfully
+2025-01-01 20:34:58,002 - INFO - Processing field: TYPE OF LEAK
+2025-01-01 20:34:58,106 - INFO - Field TYPE OF LEAK processed with result: None
+2025-01-01 20:34:58,106 - INFO - No result found for field: TYPE OF LEAK
+2025-01-01 20:34:58,106 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 20:35:13,845 - INFO - Routing message on channel: Question
+2025-01-01 20:35:18,357 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 20:35:18,389 - INFO - Image saved successfully
+2025-01-01 20:35:18,389 - INFO - Image processing completed successfully
+2025-01-01 20:35:18,389 - INFO - Processing field: TYPE OF MILK
+2025-01-01 20:35:18,389 - INFO - Field TYPE OF MILK processed with result: ['Error processing milk type']
+2025-01-01 20:35:18,389 - INFO - Successfully sent message to Unity on channel Result
+2025-01-01 20:39:28,447 - INFO - Connection closed.

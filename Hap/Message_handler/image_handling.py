@@ -8,6 +8,8 @@ from PIL import Image
 from .logger import log_exception, log_message, log_debug
 
 
+
+
 class ImageHandler:
     def __init__(self):
         self.image_ready = asyncio.Event()

@@ -1,0 +1,35 @@
+2025-01-02 10:32:43,940 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-02 10:33:12,704 - INFO - Routing message on channel: Question
+2025-01-02 10:33:19,041 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:33:19,073 - INFO - Image saved successfully
+2025-01-02 10:33:19,073 - INFO - Image processing completed successfully
+2025-01-02 10:33:19,089 - INFO - Processing field: TYPE OF MILK
+2025-01-02 10:33:20,074 - INFO - Milk detection result: FCM
+2025-01-02 10:33:20,074 - INFO - Valid result detected: FCM
+2025-01-02 10:33:20,074 - INFO - Current question or fieldValue not properly initialized
+2025-01-02 10:33:20,074 - INFO - Field TYPE OF MILK processed with result: FCM
+2025-01-02 10:33:20,074 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 10:33:40,098 - INFO - Routing message on channel: Question
+2025-01-02 10:33:44,250 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:33:44,282 - INFO - Image saved successfully
+2025-01-02 10:33:44,282 - INFO - Image processing completed successfully
+2025-01-02 10:33:44,282 - INFO - Processing field: SKU
+2025-01-02 10:34:10,651 - INFO - Field SKU processed with result: 2000
+2025-01-02 10:34:10,653 - INFO - Successfully sent message to Unity on channel Result
+2025-01-02 10:34:23,652 - INFO - Routing message on channel: Question
+2025-01-02 10:34:35,002 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:34:35,033 - INFO - Image saved successfully
+2025-01-02 10:34:35,033 - INFO - Image processing completed successfully
+2025-01-02 10:34:35,033 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 10:34:35,192 - INFO - Field TYPE OF LEAK processed with result: None
+2025-01-02 10:34:35,192 - INFO - No result found for field: TYPE OF LEAK
+2025-01-02 10:34:35,192 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 10:34:48,581 - INFO - Routing message on channel: Question
+2025-01-02 10:34:55,621 - INFO - Routing message on channel: ImageStreaming
+2025-01-02 10:34:55,659 - INFO - Image saved successfully
+2025-01-02 10:34:55,659 - INFO - Image processing completed successfully
+2025-01-02 10:34:55,659 - INFO - Processing field: TYPE OF LEAK
+2025-01-02 10:34:55,722 - INFO - Field TYPE OF LEAK processed with result: None
+2025-01-02 10:34:55,770 - INFO - No result found for field: TYPE OF LEAK
+2025-01-02 10:34:55,770 - INFO - Successfully sent message to Unity on channel Error
+2025-01-02 10:40:55,389 - INFO - Connection closed.

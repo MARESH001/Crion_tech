@@ -1,0 +1,25 @@
+2025-01-01 21:46:11,988 - INFO - Server started at ws://10.0.0.5:8000
+2025-01-01 21:47:39,692 - INFO - Routing message on channel: Question
+2025-01-01 21:47:58,692 - INFO - Routing message on channel: Question
+2025-01-01 21:48:07,099 - INFO - Routing message on channel: Question
+2025-01-01 21:48:10,802 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 21:48:10,833 - INFO - Image saved successfully
+2025-01-01 21:48:10,833 - INFO - Image processing completed successfully
+2025-01-01 21:48:10,833 - INFO - Processing field: TYPE OF MILK
+2025-01-01 21:48:11,693 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 21:48:11,693 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 21:48:11,693 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 21:48:19,318 - INFO - Connection closed.
+2025-01-01 21:48:26,146 - INFO - Routing message on channel: ImageStreaming
+2025-01-01 21:48:26,177 - INFO - Image saved successfully
+2025-01-01 21:48:26,177 - INFO - Image processing completed successfully
+2025-01-01 21:48:29,286 - INFO - Routing message on channel: Question
+2025-01-01 21:48:29,286 - INFO - Processing field: TYPE OF MILK
+2025-01-01 21:48:29,771 - INFO - Field TYPE OF MILK processed with result: None
+2025-01-01 21:48:29,786 - INFO - No result found for field: TYPE OF MILK
+2025-01-01 21:48:29,786 - INFO - Successfully sent message to Unity on channel Error
+2025-01-01 21:48:39,708 - ERROR - Timeout waiting for image to be ready for field: TYPE OF MILK
+2025-01-01 21:48:39,708 - ERROR - Error sending message to Unity: no close frame received or sent
+2025-01-01 21:48:58,699 - ERROR - Timeout waiting for image to be ready for field: TYPE OF MILK
+2025-01-01 21:49:02,943 - ERROR - Error sending message to Unity: no close frame received or sent
+2025-01-01 21:54:33,043 - INFO - Connection closed.
