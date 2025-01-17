@@ -1,0 +1,19 @@
+2025-01-16 09:03:35,832 - ERROR - Error starting server
+Traceback (most recent call last):
+  File "C:\CLONOS\Hap1 (4)\Hap1\Hap\server.py", line 47, in start_server
+    server = await websockets.serve(main, local_ip, 8000)
+  File "C:\Users\clonosadmin\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\asyncio\server.py", line 825, in __await_impl__
+    server = await self.create_server
+  File "C:\Users\clonosadmin\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1494, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 10048] error while attempting to bind on address ('10.0.0.5', 8000): only one usage of each socket address (protocol/network address/port) is normally permitted
+
+C:\CLONOS\Hap1 (4)\Hap1\Hap\Message_handler\logger.py:54
+Traceback (most recent call last):
+  File "C:\CLONOS\Hap1 (4)\Hap1\Hap\server.py", line 47, in start_server
+    server = await websockets.serve(main, local_ip, 8000)
+  File "C:\Users\clonosadmin\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\asyncio\server.py", line 825, in __await_impl__
+    server = await self.create_server
+  File "C:\Users\clonosadmin\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1494, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 10048] error while attempting to bind on address ('10.0.0.5', 8000): only one usage of each socket address (protocol/network address/port) is normally permitted
